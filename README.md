@@ -30,6 +30,13 @@ Use:
 <script>
     var html5ZOOM = new HTML5Zoom("player", "player_container", "player_container_inner", "zoom_in", "zoom_out");
     
+    $("#zoom_in").on("click", function() {
+        html5ZOOM.zoom("IN", 1.1);
+    });
+    $("#zoom_in").on("click", function() {
+        html5ZOOM.zoom("OUT", 0.9);
+    });
+    
 </script>
 
 <style>
